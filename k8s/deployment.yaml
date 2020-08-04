@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-app
+  name: demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-app
+  template:
+    metadata:
+      labels:
+        app: demo-app
+    spec:
+      containers:
+        - image: image-registry.openshift-image-registry.svc:5000/pipeline-demo/demoapp:latest
+          imagePullPolicy: Always
+          name: demo-app
+          ports:
+            - containerPort: 9080
+              protocol: TCP

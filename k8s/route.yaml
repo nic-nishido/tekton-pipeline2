@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: demo-app
+  labels:
+    app: demo-app
+spec:
+  host: demo-app-pipeline-demo.apps.cluster-7296.7296.sandbox786.opentlc.com
+  port:
+    targetPort: 9080
+  to:
+    kind: Service
+    name: demo-app
+    weight: 100
