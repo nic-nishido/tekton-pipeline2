@@ -21,3 +21,9 @@ spec:
           ports:
             - containerPort: 9080
               protocol: TCP
+          volumeMounts:
+       　 - mountPath: /app
+         　 name: app
+      volumes:
+      - emptyDir: {}
+        name: app
