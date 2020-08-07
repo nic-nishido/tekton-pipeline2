@@ -5,7 +5,7 @@ metadata:
   labels:
     app: demo-app
 spec:
-  host: demo-app-pipeline-demo.apps.cluster-7296.7296.sandbox786.opentlc.com
+  host: demo-app-pipeline-demo.apps.ctscluster01.niandc.org
   port:
     targetPort: 9080
   to:
