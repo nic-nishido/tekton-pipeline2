@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>${appName}</title>
 </head>
-<body style="background-color: white;">
+<body style="background-color: skyblue;">
   <h1>${appName}</h1>
   <div>
     <p>現在時刻：${now}</p>
